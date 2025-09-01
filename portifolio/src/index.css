@@ -1,0 +1,17 @@
+*{
+  margin: 0;
+}
+
+body{
+  font-family: sans-serif;
+  background-color: #efefef;
+}
+
+
+ul{
+  list-style: none;
+}
+
+button{
+  cursor: pointer;
+}
