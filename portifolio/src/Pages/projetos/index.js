@@ -7,7 +7,7 @@ function Projeto(){
             <h2 className='titulo'>Meus projetos</h2>
             <div className='projeto-container'>
                 <p>Você pode visualizar os meus projetos no <a>GitHub</a>:</p>
-                <img src={Git} alt='icone do github'/>
+                <img className='image' src={Git} alt='icone do github'/>
             </div>
         </div>
     )
