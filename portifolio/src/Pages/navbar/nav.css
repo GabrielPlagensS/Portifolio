@@ -31,12 +31,12 @@ nav{
     gap: 20px;              
 }
 
-.navbar-links p{
+.navbar-links a{
     text-decoration: none;
     font-size: 20px;
 }
 
-.navbar-links p:hover{
+.navbar-links a:hover{
     color: #AA5BFF;
     transition: 200ms;
 }

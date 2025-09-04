@@ -12,7 +12,7 @@ function Card() {
                     <button className='botao-linkedin'>Linkedin</button>
                 </div>
             </div>
-            <img className='foto' src={gabriel} />
+            <img className='foto' src={gabriel} alt='Foto do gabriel'/>
         </div>
     )
 }

@@ -9,12 +9,12 @@ function Navbar() {
                     <p>Gabriel P. Schuinsekel</p>
                 </div>
                 <ul className="navbar-links">
-                    <li><p href="#sobre">Sobre</p></li>
-                    <li><p href="#experiencia">Experiência</p></li>
-                    <li><p href="#formacao">Formação e Cursos</p></li>
-                    <li><p href="#habilidades">Habilidades</p></li>
-                    <li><p href="#projetos">Projetos</p></li>
-                    <li><p href="#contato">Contato</p></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#experiencia">Experiência</a></li>
+                    <li><a href="#formacao">Formação e Cursos</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
         </div>
