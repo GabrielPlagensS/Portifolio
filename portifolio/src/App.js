@@ -3,6 +3,7 @@ import Navbar from './Pages/navbar';
 import Curso from './Pages/cursos';
 import Experiencia from './Pages/experiencia';
 import Habilidade from './Pages/habilidades';
+import Projeto from './Pages/projetos';
 import './App.css';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Experiencia/>
       <Curso/>
       <Habilidade/>
+      <Projeto/>
     </div>
   );
 }
