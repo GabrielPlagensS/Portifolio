@@ -1,0 +1,12 @@
+.curso-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 70%;
+    margin: 50px auto; 
+}
+
+.curso-card{
+    background-color: #1B1D20;
+    border-radius: 10px;
+}

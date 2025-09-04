@@ -1,0 +1,67 @@
+.card{
+    background-color: #1B1D20;
+    border-radius: 60px 0 60px 0;
+    display: flex;
+    height: 549px;
+    margin-top: 5%;
+}
+
+.foto{
+    max-width: 30%;
+    border-radius: 60px 0 60px 0;
+    margin-left: 20%;
+    padding: 10px;
+}
+
+.card-text{
+    background: none;
+    padding: 0;
+    margin-top: 10%;
+}
+
+.card h2{
+    font-size: 30px;
+    margin: 10px;
+}
+
+.card p{
+    font-size: 20px;
+    margin: 10px;
+} 
+
+.card-botoes{
+    margin-top: 15%;
+    width: 300.50px;
+    display: flex;              
+    justify-content: space-between;
+    padding: 10px;
+    height: 49.2px;
+}
+
+.card button{
+    border-radius: 40px;
+    border: none;
+    height: 56px;
+    width: 146px;
+    font-size: 20px;
+}
+
+.botao-contato{
+    background: linear-gradient(135deg, #AA5BFF, #663699);
+    color: black;
+}
+
+.botao-linkedin{
+    background: linear-gradient(135deg, #0A66C2, #05305C);
+    color: white;
+}
+
+.botao-contato:hover{
+    background: linear-gradient(135deg, #663699, #AA5BFF);
+    transition: 200ms;
+}
+
+.botao-linkedin:hover{
+   background: linear-gradient(135deg, #05305C, #0A66C2);
+   transition: 200ms;
+}
