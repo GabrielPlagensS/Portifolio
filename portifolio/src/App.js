@@ -5,6 +5,7 @@ import Experiencia from './Pages/experiencia';
 import Habilidade from './Pages/habilidades';
 import Projeto from './Pages/projetos';
 import Contato from './Pages/contato';
+import Footer from './Pages/footer';
 import './App.css';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Habilidade/>
       <Projeto/>
       <Contato/>
+      <Footer/>
     </div>
   );
 }
