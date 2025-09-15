@@ -22,9 +22,9 @@ function Footer(){
                     </ul>
                 </div>
                 <div className='text-icons'>
-                    <img src={Email} alt='icone-email'/>
-                    <img src={Linkedin} alt='icone-linkedin'/>
-                    <img src={Git} alt='icone-github'/>
+                    <img className='icone' src={Email} alt='icone-email'/>
+                    <img className='icone' src={Linkedin} alt='icone-linkedin'/>
+                    <img className='icone' src={Git} alt='icone-github'/>
                     <div>
                         <p>Copyright © 2025 Gabriel Plagens Schuinsekel</p>
                     </div>

@@ -1,6 +1,8 @@
 .fundo-footer{
     background-color: #1B1D20;
-    margin-top: 5%;   
+    margin-top: 5%;  
+    padding: 30px 20px;
+    text-align: center;
 }
 
 .footer{
@@ -44,4 +46,20 @@
 .footer-links a:hover{
     color: #AA5BFF;
     transition: 200ms;
+}
+
+.text-icons{
+    margin-top: 5%;
+    display: flex;                  
+    justify-content: center; 
+    align-items: center;
+    gap: 20px;
+}
+
+.icone{
+    height: 39px;
+    width: 40px;
+    padding: 5px;
+    border-radius: 25px; 
+    background-color: #9333ea;
 }
