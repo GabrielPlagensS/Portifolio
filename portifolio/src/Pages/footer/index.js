@@ -21,11 +21,13 @@ function Footer(){
                         <li><a href="#contato">Contato</a></li>
                     </ul>
                 </div>
-                <div className='text-icons'>
+                <div className='footer-icons'>
+                <div className='icons'>
                     <img className='icone' src={Email} alt='icone-email'/>
                     <img className='icone' src={Linkedin} alt='icone-linkedin'/>
                     <img className='icone' src={Git} alt='icone-github'/>
-                    <div>
+                </div>
+                    <div className='text-icons'>
                         <p>Copyright © 2025 Gabriel Plagens Schuinsekel</p>
                     </div>
                 </div>
