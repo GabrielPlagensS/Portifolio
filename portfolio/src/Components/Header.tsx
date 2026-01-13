@@ -19,7 +19,7 @@ const Header = () => {
         </div>
 
         <nav className="hidden md:flex text-white gap-5 text-[20px] w-3xl">
-          {["sobre", "experiencia", "Formação e Cursos", "Habilidades", "Projetos", "Contato"].map(item => (
+          {["Sobre", "Experiencia", "Formação e Cursos", "Habilidades", "Projetos", "Contato"].map(item => (
             <a
               key={item}
               className="
@@ -57,7 +57,7 @@ const Header = () => {
         `}
       >
         <nav className="flex flex-col gap-4 px-6 pb-6 text-white">
-          {["sobre", "experiencia", "Formação e Cursos", "Habilidades", "Projetos", "Contato"].map(item => (
+          {["Sobre", "Experiencia", "Formação e Cursos", "Habilidades", "Projetos", "Contato"].map(item => (
             <a
               key={item}
               className="
