@@ -2,8 +2,8 @@ import CardCursos from "../Components/CardCursos";
 
 const Cursos =() => { 
     return(
-        <div className="max-w-7xl mx-auto px-6 mt-20">
-            <h1 className="text-[white] text-4xl mb-10 flex justify-center">Meus Cursos</h1>
+        <div className="max-w-7xl mx-auto px-6 mt-20" id="cursos">
+            <h1 className="text-[white] text-5xl mb-10 flex justify-center">Meus Cursos</h1>
             <div className="p-2">
                 <CardCursos
                 title="Bacharelado em Ciência da Computação"

@@ -21,6 +21,21 @@ const Header = () => {
         <nav className="hidden md:flex text-white gap-5 text-[20px] w-3xl">
           {["Sobre", "Experiencia", "Formação e Cursos", "Habilidades", "Projetos", "Contato"].map(item => (
             <a
+              href={
+                item === "Habilidades"
+                  ? "#habilidade"
+                  : item === "Sobre"
+                  ? "#sobre"
+                  : item === "Experiencia"
+                  ? "#experiencia"
+                  : item === "Formação e Cursos"
+                  ? "#cursos"
+                  : item === "Projetos"
+                  ? "#projetos"
+                  : item === "Contato"
+                  ? "#contato"
+                  : "#"
+              }
               key={item}
               className="
                 cursor-pointer
@@ -59,6 +74,21 @@ const Header = () => {
         <nav className="flex flex-col gap-4 px-6 pb-6 text-white">
           {["Sobre", "Experiencia", "Formação e Cursos", "Habilidades", "Projetos", "Contato"].map(item => (
             <a
+              href={
+                item === "Habilidades"
+                  ? "#habilidade"
+                  : item === "Sobre"
+                  ? "#sobre"
+                  : item === "Experiencia"
+                  ? "#experiencia"
+                  : item === "Formação e Cursos"
+                  ? "#cursos"
+                  : item === "Projetos"
+                  ? "#projetos"
+                  : item === "Contato"
+                  ? "#contato"
+                  : "#"
+              }
               key={item}
               className="
                 cursor-pointer

@@ -1,16 +1,25 @@
-type cardCursosProps = {
-    title: string;
-    descricao: string;
-    data: string;
+type CardCursosProps = {
+  title: string
+  descricao: string
+  data: string
 };
 
-const CardCursos = ({title, descricao, data,} :cardCursosProps) => {
-    return (
-        <div className="bg-[#1B1D20] rounded-lg p-5 m-5 border border-[white] max-w-xl flex flex-col gap-2">
-            <h2 className="text-[white] text-xl font-bold">{title}</h2>
-            <a className="text-[white]">{descricao}</a>
-            <a className="text-[white]">{data}</a>
-        </div>
-    )
+const CardCursos = ({ title, descricao, data }: CardCursosProps) => {
+  return (
+    <div className="bg-neutral-900 border border-neutral-800 rounded-xl p-6 flex flex-col gap-2">
+      <h2 className="text-white text-lg font-semibold">
+        {title}
+      </h2>
+
+      <p className="text-neutral-400">
+        {descricao}
+      </p>
+
+      <span className="text-neutral-500 text-sm">
+        {data}
+      </span>
+    </div>
+  )
 }
-export default CardCursos;
+
+export default CardCursos

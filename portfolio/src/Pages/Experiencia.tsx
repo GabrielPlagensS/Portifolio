@@ -2,8 +2,8 @@ import Expecard from "../Components/Expecard";
 
 const Experiencia =() => {
     return (
-        <div className="max-w-7xl mx-auto px-6 mt-20">
-            <h1 className="text-[white] text-4xl mb-10 flex justify-center">Minha Experiência</h1>
+        <div className="max-w-7xl mx-auto px-6 mt-20" id="experiencia">
+            <h1 className="text-[white] text-5xl mb-10 flex justify-center">Minha Experiência</h1>
             <div className="p-5">
                 <Expecard 
                     title="Bolsista Voluntário do Projeto Cidades Inteligentes na Unijuí" 
