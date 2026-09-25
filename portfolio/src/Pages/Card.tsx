@@ -1,4 +1,5 @@
 import Button from "../Components/Button";
+import fotocard from "/src/assets/Foto-card.png"
 
 const Card = () => {
   return (  
@@ -12,7 +13,7 @@ const Card = () => {
                         <Button title="Linkedin" variant="outline" href="https://www.linkedin.com/in/gabriel-plagens-schuinsekel-98430a35a/"/>
                     </div>
                 </div>
-                <img src="/src/assets/Foto-card.png" alt="Foto de perfil" />
+                <img src={fotocard} alt="Foto de perfil" />
             </div>
     </div>
 )

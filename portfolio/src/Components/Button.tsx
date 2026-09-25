@@ -1,3 +1,5 @@
+import logogit  from "../assets/github-logo-roxo.png"
+
 type ButtonProps = {
   title: string
   variant: "default" | "outline" | "gitStyle"
@@ -25,7 +27,7 @@ const Button = ({ title, variant = "default", href }: ButtonProps) => {
     >
       {variant === "gitStyle" && (
         <img
-          src="./src/assets/git-logo.png"
+          src={logogit}
           alt="GitHub"
           className="w-5 h-5"
         />

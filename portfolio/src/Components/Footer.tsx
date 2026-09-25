@@ -1,4 +1,9 @@
 import { useState } from "react";
+import logoemail  from "../assets/email-logo.png"
+import logogit  from "../assets/github-logo-roxo.png"
+import logolinke from "../assets/linke-logo.png"
+
+
 const Footer = () => {
     const [open, setOpen] = useState(false);
   return (
@@ -61,9 +66,9 @@ const Footer = () => {
         </div>
        <div className="mx-auto w-full flex items-center justify-between p-6 max-w-8xl ">
             <div className="text-white flex gap-2 text-[20px] cursor-pointer w-xs items-center">
-                <img src="./src/assets/email-logo.png" alt="E-mail" className="w-9 h-9" />
-                <img src="./src/assets/linke-logo.png" alt="LinkedIn" className="w-9 h-9" />
-                <img src="./src/assets/github-logo-roxo.png" alt="GitHub" className="w-9 h-9" />
+                <img src={logoemail} alt="E-mail" className="w-9 h-9" />
+                <img src={logolinke} alt="LinkedIn" className="w-9 h-9" />
+                <img src={logogit} alt="GitHub" className="w-9 h-9" />
             </div>
             <span className="text-[white]">Copyright © 2025 Gabriel Plagens Schuinsekel</span>
         </div>
