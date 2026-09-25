@@ -22,7 +22,7 @@ const Experiencia =() => {
                 <Expecard 
                     title="Estagiário na SMED - Secretaria Municipal de Educação de Ijuí" 
                     descricao="Atuo no sistema da SMED." 
-                    data="jul. 2024 - Atual" 
+                    data="jul. 2024 - jul. 2026" 
                 />
             </div>
         </div>
