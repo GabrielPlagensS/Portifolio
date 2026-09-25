@@ -19,7 +19,7 @@ const Contato = () => {
             href="mailto:gabrielschuinsekel@gmail.com"
             className="transition-colors duration-300 hover:text-[#AA5BFF]"
           >
-            gabrielschuinsekel@gmail.com
+            gabriel.schuinsekel@gmail.com
           </a>
         </p>
 
