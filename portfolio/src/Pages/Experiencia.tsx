@@ -15,7 +15,7 @@ const Experiencia =() => {
                 <Expecard 
                     title="Jovem Aprendiz na Unijuí" 
                     descricao="Atuei desenvolvendo soluções para o site da Unijuí." 
-                    data="2023 - 2024" 
+                    data="jun. 2022 - jun. 2024" 
                 />
             </div>
             <div className="p-5">
