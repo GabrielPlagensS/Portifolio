@@ -10,7 +10,7 @@ import Footer from "./Components/Footer";
 
 function App() {
   return (
-    <div className="bg-[black] min-h-screen">
+    <div className="bg-[black]">
       <Header/>
       <Card/>
       <Experiencia/>
