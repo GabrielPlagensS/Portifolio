@@ -1,7 +1,8 @@
 import { useState } from "react";
-import logoemail  from "../assets/email-logo.png"
-import logogit  from "../assets/github-logo-roxo.png"
-import logolinke from "../assets/linke-logo.png"
+import logo from "../assets/logo.png";
+import logoemail  from "../assets/email-logo.png";
+import logogit  from "../assets/github-logo-roxo.png";
+import logolinke from "../assets/linke-logo.png";
 
 
 const Footer = () => {
@@ -10,7 +11,7 @@ const Footer = () => {
     <footer className="bg-[#1B1D20]">
         <div className="mx-auto w-full flex items-center justify-between p-6 max-w-8xl bg-[#1B1D20]">
             <div className="text-white flex gap-2 text-[20px] cursor-pointer w-xs items-center">
-                <img src="/src/assets/logo.png" alt="Logo" className="w-9 h-9" />
+                <img src={logo} alt="Logo" className="w-9 h-9" />
                 <a className="
                     transition-all
                     duration-300
