@@ -33,8 +33,7 @@ const Card = () => {
           </h1>
 
           <p className="mx-auto max-w-xl text-sm leading-relaxed text-white sm:text-base md:mx-0">
-            Sou estagiário na SMED na área de sistemas e estudante do curso
-            bacharelado em Ciência da Computação.
+            Sou estudante do curso bacharelado em Ciência da Computação da Unijuí e atua como desenvolvedor Front-end.
           </p>
 
           {/* Botões */}
