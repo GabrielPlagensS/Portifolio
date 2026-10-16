@@ -6,14 +6,14 @@ Site de portfólio pessoal (one-page) desenvolvido com **React**, **TypeScript**
 
 ## Seções
 
-| Seção | Descrição |
-| --- | --- |
-| **Sobre** | Apresentação com foto e botões de contato/LinkedIn |
-| **Experiência** | Trajetória profissional (projeto Cidades Inteligentes, Jovem Aprendiz e estágio) |
-| **Cursos** | Graduação e cursos complementares |
-| **Habilidades** | Hard skills e soft skills |
-| **Projetos** | Link para os repositórios no GitHub |
-| **Contato** | E-mail, telefone e redes sociais |
+| Seção           | Descrição                                          |
+| --------------- | -------------------------------------------------- |
+| **Sobre**       | Apresentação com foto e botões de contato/LinkedIn |
+| **Experiência** | Trajetória profissional                            |
+| **Cursos**      | Graduação e cursos complementares                  |
+| **Habilidades** | Hard skills e soft skills                          |
+| **Projetos**    | Link para os repositórios no GitHub                |
+| **Contato**     | E-mail, telefone e redes sociais                   |
 
 A navegação é por âncoras (`#sobre`, `#experiencia`, …), com menu responsivo no cabeçalho e no rodapé.
 
@@ -53,12 +53,12 @@ Acesse o endereço exibido no terminal (por padrão `http://localhost:5173`).
 
 Execute dentro de `portfolio/`:
 
-| Comando | O que faz |
-| --- | --- |
-| `npm run dev` | Inicia o servidor de desenvolvimento com HMR |
-| `npm run build` | Verifica os tipos (`tsc -b`) e gera a build de produção em `dist/` |
-| `npm run preview` | Serve localmente a build de produção |
-| `npm run lint` | Executa o ESLint em todo o projeto |
+| Comando           | O que faz                                                          |
+| ----------------- | ------------------------------------------------------------------ |
+| `npm run dev`     | Inicia o servidor de desenvolvimento com HMR                       |
+| `npm run build`   | Verifica os tipos (`tsc -b`) e gera a build de produção em `dist/` |
+| `npm run preview` | Serve localmente a build de produção                               |
+| `npm run lint`    | Executa o ESLint em todo o projeto                                 |
 
 ## Estrutura do projeto
 
