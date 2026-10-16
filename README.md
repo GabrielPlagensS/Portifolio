@@ -2,8 +2,6 @@
 
 Site de portfólio pessoal (one-page) desenvolvido com **React**, **TypeScript**, **Vite** e **Tailwind CSS**. Apresenta quem eu sou, experiência profissional, formação e cursos, habilidades, projetos e formas de contato.
 
-> **Demo:** _adicione aqui o link do deploy_
-
 ## Seções
 
 | Seção           | Descrição                                          |
