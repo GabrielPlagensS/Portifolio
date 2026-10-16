@@ -1,73 +1,117 @@
-# React + TypeScript + Vite
+# Portfólio — Gabriel Plagens Schuinsekel
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Site de portfólio pessoal (one-page) desenvolvido com **React**, **TypeScript**, **Vite** e **Tailwind CSS**. Apresenta quem eu sou, experiência profissional, formação e cursos, habilidades, projetos e formas de contato.
 
-Currently, two official plugins are available:
+> **Demo:** _adicione aqui o link do deploy_
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Seções
 
-## React Compiler
+| Seção | Descrição |
+| --- | --- |
+| **Sobre** | Apresentação com foto e botões de contato/LinkedIn |
+| **Experiência** | Trajetória profissional (projeto Cidades Inteligentes, Jovem Aprendiz e estágio) |
+| **Cursos** | Graduação e cursos complementares |
+| **Habilidades** | Hard skills e soft skills |
+| **Projetos** | Link para os repositórios no GitHub |
+| **Contato** | E-mail, telefone e redes sociais |
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+A navegação é por âncoras (`#sobre`, `#experiencia`, …), com menu responsivo no cabeçalho e no rodapé.
 
-## Expanding the ESLint configuration
+## Tecnologias
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- [React 19](https://react.dev/)
+- [TypeScript 5.9](https://www.typescriptlang.org/)
+- [Vite 7](https://vite.dev/)
+- [Tailwind CSS 4](https://tailwindcss.com/) (via `@tailwindcss/vite`)
+- [ESLint 9](https://eslint.org/) com `typescript-eslint`, `react-hooks` e `react-refresh`
+- Fonte [Poppins](https://fonts.google.com/specimen/Poppins) (Google Fonts)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Pré-requisitos
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- **Node.js** 20.19+ ou 22.12+ (exigência do Vite 7)
+- **npm** (acompanha o Node.js)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Como executar
+
+O projeto da aplicação fica dentro da pasta `portfolio/`:
+
+```bash
+# 1. Clone o repositório
+git clone https://github.com/GabrielPlagensS/Portifolio.git
+cd Portifolio/portfolio
+
+# 2. Instale as dependências
+npm install
+
+# 3. Inicie o servidor de desenvolvimento
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Acesse o endereço exibido no terminal (por padrão `http://localhost:5173`).
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Scripts disponíveis
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Execute dentro de `portfolio/`:
+
+| Comando | O que faz |
+| --- | --- |
+| `npm run dev` | Inicia o servidor de desenvolvimento com HMR |
+| `npm run build` | Verifica os tipos (`tsc -b`) e gera a build de produção em `dist/` |
+| `npm run preview` | Serve localmente a build de produção |
+| `npm run lint` | Executa o ESLint em todo o projeto |
+
+## Estrutura do projeto
+
 ```
+Portifolio/
+└── portfolio/
+    ├── public/              # Arquivos estáticos (favicon)
+    ├── src/
+    │   ├── assets/          # Imagens e ícones
+    │   ├── Components/      # Componentes reutilizáveis
+    │   │   ├── Button.tsx       # Botão/link com variantes (default, outline, gitStyle)
+    │   │   ├── CardCursos.tsx   # Card de curso
+    │   │   ├── CardHab.tsx      # Card de habilidade
+    │   │   ├── Expecard.tsx     # Card de experiência
+    │   │   ├── Header.tsx       # Cabeçalho com menu responsivo
+    │   │   └── Footer.tsx       # Rodapé com menu, redes sociais e copyright
+    │   ├── Pages/           # Seções da página
+    │   │   ├── Card.tsx         # Sobre (hero)
+    │   │   ├── Experiencia.tsx
+    │   │   ├── Cursos.tsx
+    │   │   ├── Habilidades.tsx
+    │   │   ├── Projetos.tsx
+    │   │   └── Contato.tsx
+    │   ├── App.tsx          # Composição das seções
+    │   ├── main.tsx         # Ponto de entrada
+    │   └── index.css        # Tailwind + fonte global
+    ├── index.html
+    ├── vite.config.ts
+    ├── eslint.config.js
+    └── tsconfig*.json
+```
+
+## Personalização
+
+O conteúdo está escrito diretamente nos componentes de `src/Pages/`:
+
+- **Experiência / Cursos / Habilidades:** edite as props dos componentes `Expecard`, `CardCursos` e `CardHab` nos arquivos correspondentes.
+- **Links e contatos:** `src/Pages/Contato.tsx`, `src/Pages/Card.tsx` e `src/Components/Footer.tsx`.
+- **Itens do menu:** array `menuItems` em `Header.tsx` e `Footer.tsx`.
+- **Cores:** o tema usa roxo `#AA5BFF` como cor de destaque, sobre fundo escuro.
+
+## Deploy
+
+Por ser um site estático, pode ser publicado em qualquer serviço de hospedagem estática (Vercel, Netlify, GitHub Pages, Cloudflare Pages). Configure:
+
+- **Diretório raiz:** `portfolio`
+- **Comando de build:** `npm run build`
+- **Diretório de saída:** `dist`
+
+## Autor
+
+**Gabriel Plagens Schuinsekel**
+Estudante de Ciência da Computação (Unijuí) e desenvolvedor Front-end.
+
+- LinkedIn: [gabriel-plagens-schuinsekel](https://www.linkedin.com/in/gabriel-plagens-schuinsekel-98430a35a/)
+- GitHub: [@GabrielPlagensS](https://github.com/GabrielPlagensS)
